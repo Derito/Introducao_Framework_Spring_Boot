@@ -1,28 +1,30 @@
-# Comandos SpringBoot
-mvn spring-boot:run // Roda o projecto na ide
-http://localhost:8080 //visualizar o projecto no browser
-## Rodar debug
-inserir no properties o comando debug=true
-## Gerar jar ou war
-mvn clean package // Roda o projecto criando um jar ou war
-## Rodar o jar
-java -jar target/projecto.jar //Roda o projecto
-## Mostra todo o conteudo use sem o pipeline e o less
-jar tf projecto.jar | less // 
-## Faça o build do projecto
-mvn clean install
-## Mova o projecto war no tomcat na pasta webapps para rodar
-mv target/projecto.war ../apache-tomcat-9.0.56/webapps
+# Alguns Comandos usados no Spring Boot
 
-cd apache-tomcat-9.0.56 // entrar na pasta e rodar
+# Comandos
+1. mvn spring-boot:run - ***Roda o projecto na IDE***
+2. http://localhost:8080  - ***Visualizar o projecto no browser***
+## Rodar o debug
+1. Inserir no application.properties o comando ***debug=true***
+## Gerar um arquivo jar ou war
+1. mvn clean package - ***Roda o projecto criando um arquivo jar ou war***
+## Rodar o jar
+1. java -jar target/projecto.jar - ***Roda o projecto***
+## Mostrar todo o conteúdo do jar 
+1. jar tf projecto.jar | less - ***Recomendo usar sem o pipeline e o less no JDK 11***
+## Fazer o build do projecto
+1. mvn clean install
+## Mova o projecto war para o tomcat na pasta webapps para rodar
+1. mv target/projecto.war ../apache-tomcat-9.0.56/webapps
+2. cd apache-tomcat-9.0.56 - ***Entrar na pasta do tomcat***
 ## Iniciar o projecto war
-bash apache-tomcat-9.0.56/bin/start.sh ou
-.satartup.sh // inicia o projecto.war
-## Browser 
-localhost:8080/projecto
+1. bash apache-tomcat-9.0.56/bin/start.sh ou
+2. .satartup.sh // inicia o projecto.war
+## Browser para Visualizar
+1. localhost:8080/projecto
 
 # Spring Boot Profiles
-## Usando o properties
 
+## Usando o properties
+... em dev ...
 Para desenvolvimento e para produção
 usando @Configuration
