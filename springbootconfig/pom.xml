@@ -5,16 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.2</version>
+		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.digitalinovetionOne</groupId>
-	<artifactId>springboot</artifactId>
+	<groupId>com.digitalinivationone</groupId>
+	<artifactId>springbootconfig</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot</name>
+	<name>springbootconfig</name>
 	<description>Demo project for Spring Boot</description>
-	<packaging>war</packaging>
-	<!-- <packaging>jar</packaging>-->
 	<properties>
 		<java.version>11</java.version>
 	</properties>
