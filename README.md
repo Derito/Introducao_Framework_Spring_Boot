@@ -25,6 +25,13 @@
 # Spring Boot Profiles
 
 ## Usando o properties
-... em dev ...
+... em dev ... e ... em prod ...
 Para desenvolvimento e para produção
 usando @Configuration
+## Comandos na linha de comando Spring Boot
+Os comandos redeferidos tem prioridade em relação ao existente no application.properties
+mvn spring-boot:run -Dserver.port=8085
+## Variaveis de ambiente
+injecção com a anotação  @Value({NOME_VARIAVEL})
+default quando não se passa variavel
+na classe AppController
