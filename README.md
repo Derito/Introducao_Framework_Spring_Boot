@@ -74,7 +74,7 @@ private ApiInfo constroiApiInfo(){
         .contact(new Contact("Helder","github/",null))
         .buid();
 }
-´´´
+```
 3. Rodar a aplicação
 4. Abrir o browser para visualizar
 localhost:8080/swagger-ui.html
