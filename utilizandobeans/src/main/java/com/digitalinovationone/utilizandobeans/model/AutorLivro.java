@@ -1,2 +1,6 @@
-package com.digitalinovationone.utilizandobeans.model;public interface AutorLivro {
+package com.digitalinovationone.utilizandobeans.model;
+
+public interface AutorLivro {
+
+    void exibirAutor();
 }

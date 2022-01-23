@@ -35,3 +35,45 @@ mvn spring-boot:run -Dserver.port=8085
 injecção com a anotação  @Value({NOME_VARIAVEL})
 default quando não se passa variavel
 na classe AppController
+# SWAGGER2 - Documentando a API
+## Dependências
+1. Busque as dependecias no mvnrepository.com 
+
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+
+## Configuração
+1. Criar class SwaggerConfig
+2. Anotar com @Configuration e @EnableSwagger2
+3. inserir os metodos
+
+@Bean
+public Docket api(){
+return new Docket(DocumentationType.SWAGGER_2)
+.select()
+.apis(RequestHandlerSelectors.basePackage("com.helder.gestaoalunos.controller"))
+.paths(PathSelectors.any())
+.build()
+.apiInfo(builApiInfo());
+}
+private ApiInfo constroiApiInfo(){
+    return new ApiInfoBuilder()
+        .title("API Gestão Alunos")
+        .description("Rest API Gestão de Alunos Configurando do Swagger")
+        .version("0.0.1")
+        .contact(new Contact("Helder","github/",null))
+        .buid();
+}
+3. Rodar a aplicação
+4. Abrir o browser para visualizar
+localhost:8080/swagger-ui.html
