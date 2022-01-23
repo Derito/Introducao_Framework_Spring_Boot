@@ -4,7 +4,7 @@
 1. mvn spring-boot:run - ***Roda o projecto na IDE***
 2. http://localhost:8080  - ***Visualizar o projecto no browser***
 ## Rodar o debug
-1. [Inserir] no application.properties o [comando][df1] ***debug=true***
+1. Inserir no application.properties o comando ***debug=true***
 ## Gerar um arquivo jar ou war
 1. mvn clean package - ***Roda o projecto criando um arquivo jar ou war***
 ## Rodar o jar
@@ -56,7 +56,7 @@ na classe AppController
 1. Criar class SwaggerConfig
 2. Anotar com @Configuration e @EnableSwagger2
 3. inserir os metodos
-
+```
 @Bean
 public Docket api(){
 return new Docket(DocumentationType.SWAGGER_2)
@@ -65,7 +65,7 @@ return new Docket(DocumentationType.SWAGGER_2)
 .paths(PathSelectors.any())
 .build()
 .apiInfo(builApiInfo());
-}
+}´´´
 private ApiInfo constroiApiInfo(){
     return new ApiInfoBuilder()
         .title("API Gestão Alunos")
