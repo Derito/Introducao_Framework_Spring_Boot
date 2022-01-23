@@ -65,7 +65,7 @@ return new Docket(DocumentationType.SWAGGER_2)
 .paths(PathSelectors.any())
 .build()
 .apiInfo(builApiInfo());
-}´´´
+}
 private ApiInfo constroiApiInfo(){
     return new ApiInfoBuilder()
         .title("API Gestão Alunos")
@@ -74,6 +74,7 @@ private ApiInfo constroiApiInfo(){
         .contact(new Contact("Helder","github/",null))
         .buid();
 }
+´´´
 3. Rodar a aplicação
 4. Abrir o browser para visualizar
 localhost:8080/swagger-ui.html
