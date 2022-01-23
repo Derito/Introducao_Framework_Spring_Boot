@@ -38,7 +38,7 @@ na classe AppController
 # SWAGGER2 - Documentando a API
 ## Dependências
 1. Busque as dependecias no mvnrepository.com 
-
+```
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-swagger2</artifactId>
@@ -50,7 +50,7 @@ na classe AppController
     <artifactId>springfox-swagger-ui</artifactId>
     <version>2.9.2</version>
 </dependency>
-
+```
 
 ## Configuração
 1. Criar class SwaggerConfig
