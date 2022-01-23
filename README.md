@@ -37,7 +37,7 @@ default quando não se passa variavel
 na classe AppController
 # SWAGGER2 - Documentando a API
 ## Dependências
-1. Busque as dependecias no mvnrepository.com 
+1. Busque as dependências no site https://mvnrepository.com 
 ```
 <dependency>
     <groupId>io.springfox</groupId>
