@@ -1,4 +1,4 @@
-# Alguns Comandos usados no Spring Boot
+# <font color="red">Alguns Comandos usados no Spring Boot</font>
 
 # Comandos
 1. mvn spring-boot:run - ***Roda o projecto na IDE***
@@ -56,6 +56,7 @@ na classe AppController
 1. Criar class SwaggerConfig
 2. Anotar com @Configuration e @EnableSwagger2
 3. inserir os metodos
+> :memo: **Nota:** Tenha em atenção o nome do projecto. Em contact use os seus contactos
 ```
 @Bean
 public Docket api(){
@@ -78,3 +79,7 @@ private ApiInfo constroiApiInfo(){
 3. Rodar a aplicação
 4. Abrir o browser para visualizar
 localhost:8080/swagger-ui.html
+> Fica uma ideia, um pensamento. [^1]
+> [^1]: Deixe sua luz brilhar! 
+> :bulb: **<-** 
+
